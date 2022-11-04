@@ -1,0 +1,33 @@
+POST http://localhost:5000/student/signup
+
+content-type: application/json
+{
+    "name": "test",
+    "email": "test@test.com",
+    "phone":"4578985414",
+    "username":"test",
+    "password":"test123",
+}
+####
+GET http://localhost:5000/student/dispStudent
+
+####
+DELETE http://localhost:5000/student/delete/{63428fdd3f9d7ded8cd23ac7}
+
+####
+GET http://localhost:5000/student/getOneStudent/63428fdd3f9d7ded8cd23ac7
+
+####
+PATCH http://localhost:5000/student/update/63428fdd3f9d7ded8cd23ac7
+Content-Type: application/json
+{
+    "name": "test",
+    "email": "test@test.com",
+    "phone":"4578985414",
+    "username":"test",
+    "password":"test123",
+}
+
+
+####
+GET http://localhost:5000/student/search
